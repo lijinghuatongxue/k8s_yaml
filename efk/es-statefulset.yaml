@@ -70,7 +70,7 @@ spec:
       containers:
       - image: quay.io/fluentd_elasticsearch/elasticsearch:v7.2.0
         name: elasticsearch-logging
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         resources:
           # need more cpu upon initialization, therefore burstable class
           limits:
